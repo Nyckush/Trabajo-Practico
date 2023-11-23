@@ -1,8 +1,13 @@
 import React from 'react';
+import styles from './TaskItem.module.css';
 
-const TaskItem = () => {
+const TaskItem = ({ task, onComplete }) => {
     return(
-        <div>TaskItem</div>
+        <div className={styles.taskItem}>
+            <button onClick={() => onComplete(task.id)}>CheckBox</button>
+            <p className={task.isCompleted ? styles.completed : ''}>{task.task}</p>
+            <span>{task.tag}</span>
+        </div>
     )
 }
 

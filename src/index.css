@@ -1,6 +1,6 @@
+
 *{
-  margin: 0;
-  padding: 0;
+ 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -13,5 +13,6 @@ body{
   background-position: center;
   background-color: lightgreen;
   background-attachment: fixed;
+  box-sizing: border-box;
 }
 

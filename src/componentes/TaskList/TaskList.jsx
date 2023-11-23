@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { Children } from 'react';
+import styles from './TaskList.module.css';
+import { TaskItem } from '../Index';
 
-const TaskList = () => {
+const TaskList = ( { tasks, onComplete }) => {
     return(
-        <div className='conteiner'>TaskList</div>
+        <div className={styles.taskList}>
+            {tasks.map(task => <TaskItem key={task.id} task={task} onComplete={onComplete}/>)}
+        </div>
     )
 }
 

@@ -1,0 +1,7 @@
+.completed {
+    text-decoration: line-through;
+}
+.taskItem{
+    background-color: lightgreen;
+    border-radius: 5px; 
+}

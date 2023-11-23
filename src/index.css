@@ -7,14 +7,11 @@
 
 
 body{
-  background-image: url("./assets/img/bg.jpg");
+  background-image: url("./assets/img/fondo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: lightgreen;
+  background-attachment: fixed;
 }
-/* #root{
-  padding: .4rem;
-  background-color: #fff;
-  width: 95%;
-  height: 90%;
-} */
+

@@ -7,11 +7,10 @@ function App() {
 
   return (
     <>
-      <TaskList />
-      <TaskForm />
-      <TaskItem />
-    
-      <h1>hola</h1>
+      <div className='contenedor'>
+        <h1>Superlist</h1>
+        <TaskForm />
+      </div>
     </>
   )
 }

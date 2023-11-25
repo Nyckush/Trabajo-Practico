@@ -1,64 +1,27 @@
 import { useState } from 'react'
-import './App.css'
 import { TaskList, TaskForm, TaskItem } from './componentes/Index'
+import ToDoList from './componentes/ToDoList';
+import Tareas from './componentes/Tareas';
+import Header from './componentes/Header';
+import './App.css'
+
 
 function App() {
-  const [formVisible, setFormVisible] = useState(false)
-  const visible = () => {
-    setFormVisible(!formVisible)
-  }
 
-  const [tasks, setTasks] = useState([]);
 
-  function addTask(task, tag) {
-    setTasks([
-      ...tasks, 
-      {
-        id: crypto.randomUUID(),
-        task: task,
-        tag: tag,
-        isCompleted: false
-      }
-    ]);
-  }
-
-  function toggleTaskCompletedById(taskId) {
-    const newTasks = tasks.map(task => {
-      if (task.id === taskId) {
-        return { ...task, isCompleted: !task.isCompleted }
-      }
-      return task;
-    })
-    setTasks(newTasks);
-  }
 
   return (
-    <> 
-    <div className='contenedor'>
-      <section>
-            <header>
-                <div>
-                    <p className='title'>Superlist</p>
-                </div>
-                <div>
-                    <p>List</p>
-                    <p>Tags</p>
-                </div>
-            </header>
+    <>  
+    <div className='nav'>
+      <Header />
+    </div>
 
-        </section>
-      <TaskList 
-        tasks={tasks}
-        onComplete={toggleTaskCompletedById} 
-        />
-        {
-            formVisible && (
-              <TaskForm onAddTask={addTask} />
-            )
-          }
-          <button onClick={visible}>Add</button>
-      </div>
-    </>
+    <div className='contenedor'>
+      <Tareas />
+      <button onClick={<ToDoList/>}>Add</button>
+    </div>
+     
+  </>
   )
 }
 

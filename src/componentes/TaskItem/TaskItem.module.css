@@ -2,6 +2,8 @@
     text-decoration: line-through;
 }
 .taskItem{
-    background-color: lightgreen;
-    border-radius: 5px; 
+    background-color: rgb(255, 255, 251);
+    border-radius: 2px; 
+    border-color: #C7DB9D;
+    border-style: solid;
 }

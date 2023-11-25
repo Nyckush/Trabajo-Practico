@@ -15,26 +15,38 @@ background-attachment: fixed;
   background-attachment: fixed;
   padding: 1rem;
   box-shadow: .2rem .2rem 1rem .1rem grey;
-  display: grid;
-  flex-direction: column;
+  display: inline-table;
+  
   justify-content: center;
-  align-items: space-between;
   border-radius: .5rem;
   row-gap: 1rem;
   width: 75%;
-  margin: auto;
+  margin-top: 2%;
+  margin-left: 13%;
 }
 
+.nav{
+  background-image: url("./assets/img/form-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1rem;
+  box-shadow: .2rem .2rem 1rem .1rem grey;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: .5rem;
+  row-gap: 1rem;
+  width: 75%;
+  margin-top: 13%;
+  margin-left: 13%;
+}
 
 h1 {
   text-align: center;
 }
-/*.top-form{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  vertical-align: middle;
-}*/
+
 .icon{
   height: 100%;
 }
@@ -54,4 +66,5 @@ h1 {
   font-size:  25px;
   font-weight: bold;
 }
+
 

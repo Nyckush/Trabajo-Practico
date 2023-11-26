@@ -24,9 +24,48 @@
     padding: 1rem;
 }
 .close{
-    position:absolute;
-    top: 0;
-    right: 0;
-    margin: .5rem;
+ 
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   display: block;
+   position: absolute;
+   left: 90%;
+   bottom:80%
     
+}
+
+h5, p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn{
+    background-color: #C7DB9D;
+    border-radius: none;
+}
+
+.badge{
+    background-color: #C7DB9D;
+    
+}
+
+input{
+    margin: auto;
+    justify-content: center;
+    border: 2px solid #C7DB9D;
+
+}
+button{
+    background-color: #C7DB9D;
+    justify-content: center;
+    border:none
+}
+.formCont{
+    width: max-content;
+    height: max-content;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/src/assets/img/fondo2.png);
+    justify-content: center;
+    margin: auto;
 }

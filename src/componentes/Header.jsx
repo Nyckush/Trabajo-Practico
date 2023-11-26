@@ -1,5 +1,5 @@
 import React from "react";
-
+import './estilos.css'
 
 const Header= () =>{
     return(

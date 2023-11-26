@@ -1,4 +1,5 @@
 import React from 'react';
+import { ReactDOM } from 'react';
 import {BrowserRouter,Routes, Route} from 'react-router-dom'
 import Header from './componentes/Header';
 import Tareas from './componentes/Tareas';
@@ -18,10 +19,12 @@ function App() {
     </div>
 
     <div className='contenedor'>
+      
+      <Tareas />
       <BrowserRouter>
       <Routes>
-        <Route path='/tareas' element={Tareas} />
-        <Route path='/ventana' element={Ventana} />
+        
+      <Route path='/' element={<Ventana />} />
       </Routes>
       </BrowserRouter>
     </div>

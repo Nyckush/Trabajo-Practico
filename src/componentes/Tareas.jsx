@@ -9,8 +9,8 @@ import { ToDoList } from "./ToDoList";
 
 
 const Tareas = ()=>{
-    const [todoArray, setTodoArray] = useState(
-    [{
+    const [todoArray, setTodoArray] = useState([]
+    /* [{
      titulo: "Milk",
      descripcion: "algo",
      isComplete: false,
@@ -47,7 +47,7 @@ const Tareas = ()=>{
         id:6
        }
 
-    ])
+    ] */)
       
         
        

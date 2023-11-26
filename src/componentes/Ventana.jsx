@@ -8,7 +8,7 @@ const Ventana = ()=>{
   
 
     return (
-        <div className="w-100">
+        <div className="w-100 text-center">
           <button className="btn btn-success" onClick={()=> setVerFormulario(true)}>Add</button>
           <NuevaTarea isOpen= {verFormulario} onClose={()=>setVerFormulario(false)}/>
           

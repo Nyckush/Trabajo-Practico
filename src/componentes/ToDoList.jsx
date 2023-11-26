@@ -4,6 +4,7 @@ import './estilos.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ToDoList = () => {
+    const tags = ["Supermercado", "Tareas Pendientes", "Trabajo", "Social", "Familia", "Importante"]
     const [todoArray, setTodoArray] = useState(
         [{
          titulo: "Milk",
@@ -76,7 +77,13 @@ const ToDoList = () => {
             <br />
             <div className="input-group">
             <input type="text" name="descripcion" placeholder="Tag" value={tareaData.descripcion} onChange={handleChange} />
-            <button type="sumbit">+</button></div>
+            <select name="tags" id="tags">otros
+                {tags.forEach( (tag, i) => {
+                    <option value={i}>{tag}</option>
+                    console.log(tag)
+                })}
+            </select>
+            </div>
             <br />
             <button type="sumbit">Save</button>
            
@@ -85,4 +92,4 @@ const ToDoList = () => {
     )
 }
 
-export {ToDoList} 
+export {ToDoList}

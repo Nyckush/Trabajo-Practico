@@ -72,7 +72,6 @@ const ToDoList = () => {
     return (
       <div className="formCont">
         <form onSubmit={addTarea} >
-            
             <input type="text" name="titulo" placeholder="Name" value={tareaData.titulo} onChange={handleChange}/>
             <br />
             <div className="input-group">

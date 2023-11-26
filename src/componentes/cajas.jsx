@@ -1,17 +1,17 @@
 import React from "react";
-import './estilos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './estilos.css';
 import { useState } from "react";
 import { ToDoList } from "./ToDoList";
 
 const caja = ()=>{
     return(
-        <div key={todo.id} className="caja-tareas">
+        <div key={todo.id} className="caja-tarea">
                     <input type="checkbox" className="check" checked={todo.isComplete} />
-                    <p className={`p-0 m-0 flex-grow-1 ${todo.isComplete ? 'text-decoration-line-through' : ''}`}>
+                    <p className={`border border-success ${todo.isComplete ? 'text-decoration-line-through' : ''}`}>
                     {todo.titulo}
-                    <span className="badge bg">{todo.descripcion}</span>
                     </p>
+                    <span className="badge bg">{todo.descripcion}</span>
                     {todo.isComplete} 
                  </div>
 

@@ -33,20 +33,12 @@
   background-attachment: fixed;
   padding: 1rem;
   box-shadow: .2rem .2rem 1rem .1rem grey;
-  display: grid;
-  flex-direction: column;
-  justify-content: center;
   border-radius: .5rem;
   row-gap: 1rem;
   width: 75%;
   margin-top: 13%;
   margin-left: 13%;
 }
-
-h1 {
-  text-align: center;
-}
-
 .icon{
   height: 100%;
 }
@@ -57,14 +49,14 @@ h1 {
   border-color: #C7DB9D;
   border-style: solid;
 }
-
-
-
+header{
+  width: 100%;
+}
+/*
 .title{
   text-align: center;
   margin-top: 20px;
   font-size:  25px;
   font-weight: bold;
 }
-
-
+ */

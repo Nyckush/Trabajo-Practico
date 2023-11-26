@@ -1,6 +1,6 @@
 import React from "react";
-import './estilos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './estilos.css';
 import { useState } from "react";
 import { ToDoList } from "./ToDoList";
 
@@ -56,18 +56,19 @@ const Tareas = ()=>{
         
 
         <div className="caja-tareas">
-            <div className="d-flex align-items-center">
-             <p>List</p> <p>Tag</p>
-            </div> 
             { 
                 todoArray.map( (todo)=>
-                <div key={todo.id} className="caja-tareas">
-                    <input type="checkbox" className="check" checked={todo.isComplete} />
-                    <p className={`p-0 m-0 flex-grow-1 ${todo.isComplete ? 'text-decoration-line-through' : ''}`}>
-                    {todo.titulo}
-                    <span className="badge bg">{todo.descripcion}</span>
-                    </p>
-                    {todo.isComplete} 
+                <div key={todo.id} className="border border-success d-flex align-items-center justify-content-between caja-tareas">
+                    <div className="left d-flex align-items-baseline justify-content-between">
+                    <input type="checkbox" className="check p-100" checked={todo.isComplete} />
+                        <p className={`${todo.isComplete ? 'text-decoration-line-through' : ''}`}>
+                        {todo.titulo}
+                        </p>
+                    </div>
+                    <div className="right">
+                        <span className="badge bg">{todo.descripcion}</span>
+                        {todo.isComplete}
+                    </div>
                  </div>
 
                 )

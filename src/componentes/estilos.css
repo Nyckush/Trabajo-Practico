@@ -1,9 +1,13 @@
-.caja-tareas{
+div.caja-tarea{
     background-color: whitesmoke;
     border-color: #C7DB9D;
     border-style: solid;
     border: 2px;
-  }
+    margin-bottom: 1rem;
+}
+div.left{
+    justify-content: space-around;
+}
 
 .nueva{
     background-color: rgba(0, 0, 0, 0.753);
@@ -33,10 +37,6 @@
    left: 90%;
    bottom:80%
     
-}
-
-h5, p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .btn{

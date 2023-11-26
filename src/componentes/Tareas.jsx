@@ -1,24 +1,15 @@
 import React from "react";
 import './estilos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from "react";
+import { ToDoList } from "./ToDoList";
 
-const toDoArray = [
-    {
-    titulo: "Titulo1",
-    descripcion: "Descripcion 1",
-    isComplete: false,
-    id: 1
-    },
 
-    {titulo: "Titulo2",
-     descripcion: "Descripcion 2",
-     isComplete: true,
-     id: 2
-    }
-]
 
 const Tareas = ()=>{
+
     return(
+
         <div className="caja-tareas">
             <div className="d-flex align-items-center list-group-item">
                 <h5>List</h5>

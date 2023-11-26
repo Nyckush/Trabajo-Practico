@@ -1,24 +1,29 @@
-import { useState } from 'react'
-import { TaskList, TaskForm, TaskItem } from './componentes/Index'
-import ToDoList from './componentes/ToDoList';
-import Tareas from './componentes/Tareas';
+import React from 'react';
+import {BrowserRouter,Routes, Route} from 'react-router-dom'
 import Header from './componentes/Header';
+import Tareas from './componentes/Tareas';
+import Ventana from './componentes/Ventana';
+
 import './App.css'
+
 
 
 function App() {
 
 
-
   return (
-    <>  
+    <> 
     <div className='nav'>
       <Header />
     </div>
 
     <div className='contenedor'>
-      <Tareas />
-      <button onClick={<ToDoList/>}>Add</button>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/tareas' element={Tareas} />
+        <Route path='/ventana' element={Ventana} />
+      </Routes>
+      </BrowserRouter>
     </div>
      
   </>

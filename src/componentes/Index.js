@@ -1,4 +1,5 @@
-export { TaskList } from "./TaskList/TaskList"
-export { TaskForm } from "./TaskForm/TaskForm"
-export { TaskItem } from "./TaskItem/TaskItem"
 
+export {ToDoList} from "./ToDoList";
+export {Tareas} from "./Tareas";
+export {NuevaTarea } from "./NuevaTarea";
+export {Ventana} from "./Ventana"

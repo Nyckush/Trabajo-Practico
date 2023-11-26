@@ -71,4 +71,4 @@ const ToDoList = () => {
     )
 }
 
-export default  ToDoList
+export {ToDoList} 

@@ -9,8 +9,8 @@ import { ToDoList } from "./ToDoList";
 
 
 const Tareas = ()=>{
-    const [todoArray, setTodoArray] = useState([]
-    /* [{
+    const [todoArray, setTodoArray] = useState(
+    [{
      titulo: "Milk",
      descripcion: "algo",
      isComplete: false,
@@ -47,14 +47,12 @@ const Tareas = ()=>{
         id:6
        }
 
-    ] */)
+    ])
       
         
        
 
     return(
-        
-
         <div className="caja-tareas">
             { 
                 todoArray.map( (todo)=>

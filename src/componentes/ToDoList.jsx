@@ -2,9 +2,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import './estilos.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Tareas from './Tareas';
 
 const ToDoList = () => {
-    const tags = ["Supermercado", "Tareas Pendientes", "Trabajo", "Social", "Familia", "Importante"]
     const [todoArray, setTodoArray] = useState(
         [{
             titulo: "Milk",
@@ -50,17 +50,21 @@ const ToDoList = () => {
     }
     const addTarea = (e) => {
         e.preventDefault();
+        console.log(tareaData)
         if (tareaData.titulo != '' && tareaData.descripcion != '') {
             const todo = tareaData;
             todo.isComplete = false;
             todo.id = todoArray.length + 1;
 
-            setTodoArray([...todoArray, todo])
+            const todoArrayTemp = [...todoArray];
+            todoArrayTemp.push(todo)
+            setTodoArray([todoArrayTemp])
             setTareaData({ titulo: '', descripcion: '' })
-
+            console.log(todoArray)
         }
-        console.dir(e)
+        return <Tareas></Tareas>
     }
+    
     useEffect(() => {
         const data = window.localStorage.getItem('todoItems')
         if (data != null) setTodoArray(JSON.parse(data))

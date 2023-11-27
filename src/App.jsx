@@ -19,7 +19,6 @@ function App() {
       </div>
 
       <div className='contenedor'>
-
         <BrowserRouter>
           <Routes>
 

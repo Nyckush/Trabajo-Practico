@@ -17,7 +17,8 @@
     background-color: #fff;
     width: 50%;
     max-width: 320px;
-    min-height: 300px;    
+    min-width: 320px;
+    border-radius: .3rem;
     /* 
     align-items: center;
     justify-content: center; */
@@ -34,7 +35,6 @@
     width: 25px;
     height: 25px;
     border-radius: 1rem;
-    background-color: #C7DB9D;
     /* 
     display: block;
     position: absolute;

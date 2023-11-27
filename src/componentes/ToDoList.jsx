@@ -84,7 +84,7 @@ const ToDoList = () => {
                         })}
                     </select> */}
                 </div>
-                <button type="sumbit" onClick={addTarea}>Save</button>
+                <button className="btn-save" type="sumbit" onClick={addTarea}>Save</button>
             </form>
         </div>
     )

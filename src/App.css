@@ -13,16 +13,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 1rem;
   box-shadow: .2rem .2rem 1rem .1rem grey;
-  display: inline-table;
-  
-  justify-content: center;
-  border-radius: .5rem;
-  row-gap: 1rem;
+  border-radius: .3rem;
   width: 75%;
-  margin-top: 2%;
-  margin-left: 13%;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .nav{
@@ -31,13 +26,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 1rem;
   box-shadow: .2rem .2rem 1rem .1rem grey;
-  border-radius: .5rem;
-  row-gap: 1rem;
+  margin: 1rem auto;
   width: 75%;
-  margin-top: 13%;
-  margin-left: 13%;
+  border-radius: .3rem;
 }
 .icon{
   height: 100%;

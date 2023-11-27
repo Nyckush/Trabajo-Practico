@@ -8,8 +8,13 @@ const Ventana = () => {
 
 
   return (
+    /* 
+    Div inferior de la lista para agregar nuevas tareas, tiene el boton "Add". 
+    Cuando se hace click se abre el componente de NuevaTarea que también lleva dentro
+    otro componente que es ToDoList 
+     
+    */
     <div className="w-100 text-center">
-      {console.log(setVerFormulario)}
 
       <button className="btn btn-success" onClick={() => setVerFormulario(true)}>Add</button>
       <NuevaTarea isOpen={verFormulario} onClose={() => setVerFormulario(false)} />

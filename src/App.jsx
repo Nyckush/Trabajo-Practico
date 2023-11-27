@@ -20,7 +20,6 @@ function App() {
 
     <div className='contenedor'>
       
-      <Tareas />
       <BrowserRouter>
       <Routes>
         

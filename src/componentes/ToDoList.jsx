@@ -4,6 +4,7 @@ import './estilos.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ToDoList = () => {
+    const nuevo = {}
     const tags = ["Supermercado", "Tareas Pendientes", "Trabajo", "Social", "Familia", "Importante"]
     const [todoArray, setTodoArray] = useState(
         [{
@@ -59,6 +60,7 @@ const ToDoList = () => {
             setTareaData({titulo:'', descripcion:''})
             
         }
+        console.dir(e)
     }
     useEffect(()=>{
         const data = window.localStorage.getItem('todoItems')
@@ -69,23 +71,23 @@ const ToDoList = () => {
         window.localStorage.setItem('todoItems', data)
     },[todoArray])
 
-
+    
     return (
-      <div className="formCont">
+      <div className={nuevo}>
         <form onSubmit={addTarea} >
             <input type="text" name="titulo" placeholder="Name" value={tareaData.titulo} onChange={handleChange}/>
             <br />
             <div className="input-group">
             <input type="text" name="descripcion" placeholder="Tag" value={tareaData.descripcion} onChange={handleChange} />
-            <select name="tags" id="tags">otros
-                {tags.forEach( (tag, i) => {
-                    <option value={i}>{tag}</option>
-                    console.log(tag)
+            <select name="tags" id="tags">
+                {tags.map( (tag, i) => {
+                    const tarea = <option value={`tag-${i}`}>{tag}</option>;
+                    return tarea;
                 })}
             </select>
             </div>
             <br />
-            <button type="sumbit">Save</button>
+            <button type="sumbit" onClick={addTarea}>Save</button>
            
         </form>
       </div>

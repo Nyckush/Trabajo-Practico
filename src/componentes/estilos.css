@@ -1,15 +1,16 @@
-div.caja-tarea{
+div.caja-tarea {
     background-color: whitesmoke;
     border-color: #C7DB9D;
     border-style: solid;
     border: 2px;
     margin-bottom: 1rem;
 }
-div.left{
+
+div.left {
     justify-content: space-around;
 }
 
-.nueva{
+.nueva {
     background-color: rgba(0, 0, 0, 0.753);
     position: fixed;
     top: 0;
@@ -19,53 +20,56 @@ div.left{
     display: grid;
     place-items: center;
 }
-.nueva-conteiner{
-    background-color: white;
+
+.nueva-conteiner {
     width: 50%;
     min-width: 200px;
     border-radius: 3px;
     position: relative;
     padding: 1rem;
-}
-.close{
- 
-   width: 25px;
-   height: 25px;
-   border-radius: 50%;
-   display: block;
-   position: absolute;
-   left: 90%;
-   bottom:80%
-    
+    background-image: url("../assets/img/fondo2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.btn{
+.close {
+
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 90%;
+    bottom: 80%
+}
+
+.btn {
     background-color: #C7DB9D;
     border-radius: none;
 }
 
-.badge{
+.badge {
     background-color: #C7DB9D;
-    
+
 }
 
-input{
+input {
     margin: auto;
     justify-content: center;
     border: 2px solid #C7DB9D;
 
 }
-button{
+
+button {
     background-color: #C7DB9D;
     justify-content: center;
-    border:none
+    border: none
 }
-.formCont{
+
+.formCont {
     width: max-content;
     height: max-content;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(/src/assets/img/fondo2.png);
-    justify-content: center;
     margin: auto;
 }

@@ -19,6 +19,7 @@ function App() {
       </div>
 
       <div className='contenedor'>
+        <Tareas/>
         <BrowserRouter>
           <Routes>
 

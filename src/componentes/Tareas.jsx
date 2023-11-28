@@ -48,7 +48,13 @@ const Tareas = ()=>{
        }
 
     ])
-      
+    const handleCheckboxChange = (id) => {
+        setTodoArray((prevTodoArray) =>
+          prevTodoArray.map((todo) =>
+            todo.id === id ? { ...todo, isComplete: !todo.isComplete } : todo
+          )
+        );
+      };
         
        
 
@@ -58,7 +64,7 @@ const Tareas = ()=>{
                 todoArray.map( (todo)=>
                 <div key={todo.id} className="border border-success d-flex align-items-center justify-content-between caja-tareas">
                     <div className="left d-flex align-items-baseline justify-content-between">
-                    <input type="checkbox" className="check p-100" checked={todo.isComplete} />
+                    <input type="checkbox" className="check p-100" checked={todo.isComplete} onChange={()=> handleCheckboxChange(todo.id)} />
                         <p className={`${todo.isComplete ? 'text-decoration-line-through' : ''}`}>
                         {todo.titulo}
                         </p>
